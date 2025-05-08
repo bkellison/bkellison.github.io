@@ -13,7 +13,7 @@
             --primary-dark: #6A3E2B;
             --light-tan: #f5e1c5;
             --dark-brown: #5c4033;
-            --background: #f9f7f4;
+            --background: #f9f7f4;f
         }
         
         body {
@@ -213,7 +213,11 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Blake Kellison</a>
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <span>Blake Kellison</span>
+                <span class="vertical-divider">|</span>
+                <a href="https://www.linkedin.com/in/blake-kellison-36567b34a" target="_blank" class="text-light text-decoration-none">LinkedIn Blake Kellison</a>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -252,12 +256,10 @@
             <h2 class="text-center section-title">About Me</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="about-content">
-                        <img src="headshot.png" alt="Blake Kellison" class="profile-photo">
-                        <div>
-                            <p>I am a software developer with experience in full-stack development and hardware integration. I have a background projects containing web development, computer vision, and IoT systems, I have created applications that deliver meaningful user experiences.</p>
-                            <p>My approach combines technical expertise with creative problem-solving to develop solutions that are both functional and user-friendly. I'm constantly learning new technologies and expanding my skill set.</p>
-                        </div>
+                    <div class="about-content flex-column align-items-center text-center">
+                        <img src="headshot.png" alt="Blake Kellison" class="profile-photo mb-3">
+                        <p class="px-3">I am a software developer with experience in full-stack development and hardware integration. I have a background in web development, computer vision, and IoT systems, and have created applications that deliver meaningful user experiences.</p>
+                        <p class="px-3">My approach combines technical expertise with creative problem-solving to develop solutions that are both functional and user-friendly. I'm constantly learning new technologies and expanding my skill set.</p>
                     </div>
                 </div>
             </div>
