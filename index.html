@@ -26,7 +26,7 @@
         .navbar {
             background-color: var(--primary);
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-radius: 0; /* Changed to remove all rounding */
+            border-radius: 0; 
         }
         
         .navbar .nav-link {
@@ -185,6 +185,28 @@
             margin-right: 5px;
             margin-bottom: 5px;
         }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            margin-right: 25px;
+            border: 4px solid var(--light-tan);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .vertical-divider {
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--primary);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -219,7 +241,7 @@
         <div class="container">
             <h1>Blake Kellison</h1>
             <p class="lead">Software Developer</p>
-            <p class="mb-4">Specializing in full-stack development and hardware integration</p>
+            <p class="mb-4">Bachelor of Science in Engineering, Biomedical Engineering, Specializing in software development</p>
             <a href="#projects" class="btn btn-light">View My Work</a>
         </div>
     </section>
@@ -230,8 +252,13 @@
             <h2 class="text-center section-title">About Me</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <p>I am a software developer with experience in full-stack development and hardware integration. I'm passionate about building innovative solutions that bridge software and hardware to solve real-world problems. With a background in web development, computer vision, and IoT systems, I create applications that deliver meaningful user experiences.</p>
-                    <p>My approach combines technical expertise with creative problem-solving to develop solutions that are both functional and user-friendly. I'm constantly learning new technologies and expanding my skill set to stay at the forefront of the rapidly evolving tech landscape.</p>
+                    <div class="about-content">
+                        <img src="headshot.png" alt="Blake Kellison" class="profile-photo">
+                        <div>
+                            <p>I am a software developer with experience in full-stack development and hardware integration. I have a background projects containing web development, computer vision, and IoT systems, I have created applications that deliver meaningful user experiences.</p>
+                            <p>My approach combines technical expertise with creative problem-solving to develop solutions that are both functional and user-friendly. I'm constantly learning new technologies and expanding my skill set.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -358,8 +385,7 @@
                 <div class="col-md-6">
                     <div class="contact-info">
                         <p><i class="fas fa-envelope"></i> Email: <a href="mailto:blakekellison07@gmail.com">blakekellison07@gmail.com</a></p>
-                        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/blake-kellison-36567b34a" target="_blank">Blake Kellison</a></p>
-                        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/bkellison" target="_blank">github.com/bkellison</a></p>
+                        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/blake-kellison-36567b34a" target="_blank">Blake Kellison</a> <span class="vertical-divider">|</span> <i class="fab fa-github"></i> <a href="https://github.com/bkellison" target="_blank">github.com/bkellison</a></p>
                     </div>
                 </div>
             </div>
@@ -369,7 +395,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Blake Kellison.  All rights reserved.</p>
+            <p>&copy; 2025 Blake Kellison. All rights reserved.</p>
         </div>
     </footer>
 
