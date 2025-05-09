@@ -90,10 +90,17 @@
             width: 250px;
             height: 250px;
             object-fit: cover;
+            object-position: center 20%; /* Move image up to show full head */
             border: 5px solid var(--light-tan);
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             margin-bottom: 20px;
+        }
+        
+        /* New class for the about text */
+        .about-text {
+            font-size: 1.15rem; /* Increased font size */
+            max-width: 90%; /* Control paragraph width */
         }
         
         .project-card {
@@ -216,6 +223,12 @@
             margin-right: 5px;
             margin-bottom: 5px;
         }
+        
+        /* New class for section containers to align consistently */
+        .section-container {
+            padding-left: 0;
+            padding-right: 0;
+        }
     </style>
 </head>
 <body>
@@ -263,15 +276,17 @@
 
     <!-- About Section -->
     <section id="about" class="py-5">
-        <div class="container">
+        <div class="container section-container">
             <h2 class="text-center section-title">About Me</h2>
-            <div class="row g-0 align-items-center">
-                <div class="col-lg-3 text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
                     <img src="headshot.jpg" alt="Blake Kellison Headshot" class="profile-image">
                 </div>
-                <div class="col-lg-6">
-                    <p>I am a software developer with experience in full-stack development and hardware integration. I'm passionate about building innovative solutions that bridge software and hardware to solve real-world problems. With a background in web development, computer vision, and IoT systems, I create applications that deliver meaningful user experiences.</p>
-                    <p>My approach combines technical expertise with creative problem-solving to develop solutions that are both functional and user-friendly. I'm constantly learning new technologies and expanding my skill set to stay at the forefront of the rapidly evolving tech landscape.</p>
+                <div class="col-lg-7">
+                    <div class="about-text">
+                        <p>I am a software developer with experience in full-stack development and hardware integration. I'm passionate about building innovative solutions that bridge software and hardware to solve real-world problems. With a background in web development, computer vision, and IoT systems, I create applications that deliver meaningful user experiences.</p>
+                        <p>My approach combines technical expertise with creative problem-solving to develop solutions that are both functional and user-friendly. I'm constantly learning new technologies and expanding my skill set to stay at the forefront of the rapidly evolving tech landscape.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -279,7 +294,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-5 bg-light">
-        <div class="container">
+        <div class="container section-container">
             <h2 class="text-center section-title">Projects</h2>
             <div class="row g-4">
                 <!-- DAMS Project -->
@@ -347,7 +362,7 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-5">
-        <div class="container">
+        <div class="container section-container">
             <h2 class="text-center section-title">Skills</h2>
             <div class="row g-4">
                 <div class="col-md-4">
@@ -392,7 +407,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
-        <div class="container">
+        <div class="container section-container">
             <h2 class="text-center section-title">Contact Me</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
